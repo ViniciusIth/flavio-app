@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color: #011f39;
+  --secondary-color: #15616D;
+  --alert-color: #ff8800;
+  --danger-color: #9a031e;
+  --success-color: #38b000;
+}
+
+html, body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
