@@ -1,15 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 :root {
-  --primary-color: #011f39;
-  --secondary-color: #15616D;
-  --alert-color: #ff8800;
-  --danger-color: #9a031e;
-  --success-color: #38b000;
+  // Colours
+  --background-color: #fff;
+  --background-color-trans: #ffffff53;
+
+  --font-color: #373a3c;
+  --primary-color: #4ba5a5;
+
+  --danger-color: #f44336;
+  --on-danger-color: #fff;
+
+  --success-color: #04aa6d;
+  --on-success-color: #fff;
+
+  --counter-primary-color: var(--background-color);
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #373a3c;
+    --background-color-trans: #373a3c53;
+    --font-color: #fff;
+    --primary-color: #009b9b;
+
+    --danger-color: #ff6a6a;
+    --on-danger-color: #373a3c;
+
+    --success-color: #2db885;
+    --on-success-color: #373a3c;
+  }
 }
 
-html, body {
+html,
+body {
   margin: 0;
+  color: var(--font-color);
+  font-family: "Lato", sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 * {
