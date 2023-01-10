@@ -21,7 +21,7 @@ const routes: Routes = [
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
   },
   // If no match redirect home
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: 'p' },
 ];
 
 @NgModule({
