@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { PublicComponent } from './public.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { HeaderComponent } from './layout/header/header.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [PublicComponent, HeaderComponent, FooterComponent],
-  imports: [CommonModule, PublicRoutingModule],
+  declarations: [PublicComponent],
+  imports: [CommonModule, PublicRoutingModule, SharedModule],
 })
 export class PublicModule {}
