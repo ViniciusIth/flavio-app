@@ -69,6 +69,11 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "host": "::",
+            "port": 25565,
+            "disableHostCheck": true
+          },
           "configurations": {
             "production": {
               "browserTarget": "flavio-app:build:production"
