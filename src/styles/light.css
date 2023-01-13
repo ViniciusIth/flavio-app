@@ -75,22 +75,22 @@
 }
 
 /* Tertiary Colour */
-.Tertiary {
+.tertiary {
   color: var(--ref--color--tertiary100);
   background-color: var(--ref--color--tertiary40);
 }
 
-.on-Tertiary {
+.on-tertiary {
   color: var(--ref--color--tertiary40);
   background-color: var(--ref--color--tertiary100);
 }
 
-.Tertiary-container {
+.tertiary-container {
   color: var(--ref--color--tertiary10);
   background-color: var(--ref--color--tertiary90);
 }
 
-.on-Tertiary-container {
+.on-tertiary-container {
   color: var(--ref--color--tertiary90);
   background-color: var(--ref--color--tertiary10);
 }
