@@ -1,45 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("./styles/shape.css");
+@import url("./styles/typo.css");
+@import url("./styles/components.css");
+@import url("./styles/light.css") screen;
+@import url("./styles/dark.css") screen and (prefers-color-scheme: dark);
 
-:root {
-  // Colours
-  --background-color: #fff;
-  --background-color-trans: #ffffff53;
-
-  --font-color: #373a3c;
-  --primary-color: #4ba5a5;
-
-  --danger-color: #f44336;
-  --on-danger-color: #fff;
-
-  --success-color: #04aa6d;
-  --on-success-color: #fff;
-
-  --counter-primary-color: var(--background-color);
-
-  @media (prefers-color-scheme: dark) {
-    --background-color: #373a3c;
-    --background-color-trans: #373a3c53;
-    --font-color: #fff;
-    --primary-color: #009b9b;
-
-    --danger-color: #ff6a6a;
-    --on-danger-color: #373a3c;
-
-    --success-color: #2db885;
-    --on-success-color: #373a3c;
-  }
+* {
+  transition: color 500ms;
+  transition: background-color 500ms;
+  transition: box-shadow 100ms cubic-bezier(0, .8, 0, .8);
+  box-sizing: border-box;
 }
 
 html,
 body {
   width: 100vw;
+  min-height: 100vh;
   margin: 0;
-  color: var(--font-color);
+
   font-family: "Lato", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
-* {
-  box-sizing: border-box;
+a {
+  text-decoration: none;
+  color: var(--ref--color--primary60);
+
+  :visited {
+    color: var(--ref--color--primary60);
+  }
 }

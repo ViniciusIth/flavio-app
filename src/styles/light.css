@@ -1,0 +1,117 @@
+@import url("./pallete/colors.css");
+
+/* Background */
+.background {
+  color: var(--ref--color--neutral10);
+  background-color: var(--ref--color--neutral99);
+}
+
+.on-background {
+  color: var(--ref--color--neutral99);
+  background-color: var(--ref--color--neutral10);
+}
+
+/* Surface */
+.surface {
+  color: var(--ref--color--neutral10);
+  background-color: var(--ref--color--neutral99);
+}
+
+.on-surface {
+  color: var(--ref--color--neutral99);
+  background-color: var(--ref--color--neutral10);
+}
+
+.surface-variant {
+  background-color: var(--ref--color--neutral-variant90);
+  color: var(--ref--color--neutral-variant30);
+}
+
+.on-surface-variant {
+  background-color: var(--ref--color--neutral-variant30);
+  color: var(--ref--color--neutral-variant90);
+}
+
+/* Primary Colour */
+.primary {
+  color: var(--ref--color--primary100);
+  background-color: var(--ref--color--primary40);
+}
+
+.on-primary {
+  color: var(--ref--color--primary40);
+  background-color: var(--ref--color--primary100);
+}
+
+.primary-container {
+  color: var(--ref--color--primary10);
+  background-color: var(--ref--color--primary95);
+}
+
+.on-primary-container {
+  color: var(--ref--color--primary95);
+  background-color: var(--ref--color--primary10);
+}
+
+/* Secondary Colour */
+.secondary {
+  color: var(--ref--color--secondary100);
+  background-color: var(--ref--color--secondary40);
+}
+
+.on-secondary {
+  color: var(--ref--color--secondary40);
+  background-color: var(--ref--color--secondary100);
+}
+
+.secondary-container {
+  color: var(--ref--color--secondary10);
+  background-color: var(--ref--color--secondary90);
+}
+
+.on-secondary-container {
+  color: var(--ref--color--secondary90);
+  background-color: var(--ref--color--secondary10);
+}
+
+/* Tertiary Colour */
+.Tertiary {
+  color: var(--ref--color--tertiary100);
+  background-color: var(--ref--color--tertiary40);
+}
+
+.on-Tertiary {
+  color: var(--ref--color--tertiary40);
+  background-color: var(--ref--color--tertiary100);
+}
+
+.Tertiary-container {
+  color: var(--ref--color--tertiary10);
+  background-color: var(--ref--color--tertiary90);
+}
+
+.on-Tertiary-container {
+  color: var(--ref--color--tertiary90);
+  background-color: var(--ref--color--tertiary10);
+}
+
+/* Danger/Error Colour */
+.danger {
+  color: var(--ref--color--danger100);
+  background-color: var(--ref--color--danger40);
+}
+
+.on-danger {
+  color: var(--ref--color--danger40);
+  background-color: var(--ref--color--danger100);
+}
+
+.danger-container {
+  color: var(--ref--color--danger10);
+  background-color: var(--ref--color--danger90);
+}
+
+.on-danger-container {
+  color: var(--ref--color--danger90);
+  background-color: var(--ref--color--danger10);
+}
