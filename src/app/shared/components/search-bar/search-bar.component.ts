@@ -4,7 +4,7 @@ import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
-  styleUrls: ['./search-bar.component.scss'],
+  styleUrls: ['./search-bar.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchBarComponent {

@@ -13,10 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media screen and (min-width: 1200px) {
-    // bigger screens
-  }
 }
 
 .placeholder {
@@ -39,7 +35,7 @@ nav {
   font-weight: bold;
   padding: 0 10px;
 
-  a {
-    height: 20px;
-  }
+}
+.nav-item a {
+  height: 20px;
 }
