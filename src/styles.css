@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@layer components {
+
+  .background {
+    @apply bg-neutral-100 text-neutral-900;
+  }
+
+  .surface {
+    @apply bg-neutral-100 text-neutral-900;
+  }
+
+  .primary {
+    @apply bg-primary-400 text-neutral-900
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    .background {
+      @apply bg-neutral-900 text-neutral-100;
+    }
+
+    .surface {
+      @apply bg-neutral-800 text-neutral-100;
+    }
+
+    .primary {
+      @apply bg-primary-600 text-neutral-100
+    }
+  }
+
+  .bttn-filled {
+    @apply h-10 px-6 rounded-xl hover:opacity-90 active:opacity-80;
+  }
+
+  .bttn-outlined {
+    @apply h-10 px-6 bg-transparent border-1 rounded-xl border-solid border-current hover:opacity-80 active:opacity-60;
+  }
+}
+
+* {
+  transition: color ease-in-out 2000ms, background-color ease-in-out 2000ms;
+  box-sizing: border-box;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/*
+::selection {
+  background-color: var(--ref--color--secondary20);
+  color: #fff;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: "Lato", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  color: var(--ref--color--primary60);
+}
+
+a:visited {
+  color: var(--ref--color--primary60);
+} */
