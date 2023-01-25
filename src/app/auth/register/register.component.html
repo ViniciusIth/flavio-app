@@ -1,0 +1,31 @@
+<form class="register-form" [formGroup]="registerForm">
+  <h1 class="text-tittle">Registrar nova conta</h1>
+
+  <div class="mt-5">
+    <input class="rounded-xl surface capitalize" type="text" name="name" id="name" required formControlName="name"
+      autocomplete="name" />
+    <label class="text-label" for="name" aria-label="Nome"></label>
+  </div>
+
+  <div class="mt-5">
+    <input class="rounded-xl surface" type="email" name="email" id="email" required formControlName="email"
+      autocomplete="email" />
+    <label class="text-label" for="email" aria-label="Email"></label>
+  </div>
+
+  <div class="mt-5">
+    <input class="rounded-xl surface" type="password" name="password" id="password" required formControlName="password"
+      autocomplete="new-password" />
+    <label class="text-label" for="password" aria-label="Senha"></label>
+  </div>
+
+  <div class="mt-5">
+    <input class="rounded-xl surface" type="password" name="confirm-password" id="confirm-password" required
+      formControlName="passwordConfirm" autocomplete="off" />
+    <label class="text-label" for="confirm-password" aria-label="Confirmar Senha"></label>
+  </div>
+
+  <div class="mt-5">
+    <button type="button" class="primary bttn-filled" [disabled]="!registerForm.valid">Cadastrar</button>
+  </div>
+</form>
