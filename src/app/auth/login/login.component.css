@@ -1,0 +1,49 @@
+:host {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+}
+
+.login-form {
+  display: grid;
+  row-gap: 20px;
+}
+
+input {
+  outline: 0;
+  border: 1px solid currentColor;
+  padding: 18px 28px;
+  width: 100%;
+  display: block;
+}
+
+input + label {
+  width: fit-content;
+  display: block;
+  padding: 0 28px;
+  margin-top: -2.5rem;
+}
+
+input + label::before {
+  display: block;
+  background-color: #e2e5e4;
+  content: attr(aria-label);
+  transition: 0.2s ease-in-out;
+}
+
+input:is(:focus, :active, .ng-dirty) + label::before {
+  width: fit-content;
+  padding: 0 5px;
+  transform: translate(0, -2.5em);
+  transition: 0.2s ease-in-out;
+}
+
+input.ng-invalid:not(.ng-untouched) {
+  border-color: #fd6c70;
+}
+
+input.ng-valid {
+  border-color: #29dea8;
+}
