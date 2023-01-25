@@ -1,17 +1,18 @@
-<div class="login-form">
+<form class="login-form" [formGroup]="loginForm">
   <h1 class="text-tittle">Fazer login</h1>
 
   <div class="mt-5">
-    <input class="rounded-xl surface" type="email" name="email" id="email" />
+    <input class="rounded-xl surface" type="email" name="email" id="email" formControlName="email" autocomplete="email"/>
     <label class="text-label" for="email" aria-label="Email"></label>
   </div>
 
   <div class="mt-5">
-    <input class="rounded-xl surface" type="password" name="password" id="password" />
+    <input class="rounded-xl surface" type="password" name="password" id="password" autocomplete="current-password" formControlName="password">
     <label class="text-label" for="password" aria-label="Senha"></label>
   </div>
 
-  <div class="mt-5">
-    <button type="button" class="primary bttn-filled">Login</button>
+  <div class="mt-5 flex justify-between">
+    <button type="button" class="primary bttn-filled" [disabled]="!loginForm.valid">Login</button>
+    <a class="clickable flex items-center">Esqueci minha senha</a>
   </div>
-</div>
+</form>

@@ -1,5 +1,4 @@
 :host {
-  width: 100%;
   display: block;
 }
 
@@ -34,11 +33,17 @@ input + label::before {
   transition: 0.2s ease-in-out;
 }
 
-input:focus + label::before,
-input:active + label::before,
-input:invalid + label::before {
+input:is(:focus, :active, .ng-dirty) + label::before {
   width: fit-content;
   padding: 0 5px;
   transform: translate(0, -2.5em);
   transition: 0.2s ease-in-out;
+}
+
+input.ng-invalid:not(.ng-untouched) {
+  border-color: #fd6c70;
+}
+
+input.ng-valid {
+  border-color: #29dea8;
 }
