@@ -1,16 +1,14 @@
 import {
   trigger,
   transition,
-  query,
   style,
-  stagger,
   animate,
 } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss'],
+  styleUrls: ['./auth.component.css'],
   animations: [
     trigger('toggleTrigger', [
       transition(':enter', [
