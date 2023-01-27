@@ -28,7 +28,7 @@ input + label {
 
 input + label::before {
   display: block;
-  background-color: #e2e5e4;
+  background-color: #f7f7f7;
   content: attr(aria-label);
   transition: 0.2s ease-in-out;
 }

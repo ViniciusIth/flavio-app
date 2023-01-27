@@ -28,7 +28,7 @@ input + label {
 
 input + label::before {
   display: block;
-  background-color: #e2e5e4;
+  background-color: #f6f7f7;
   content: attr(aria-label);
   transition: 0.2s ease-in-out;
 }
@@ -40,7 +40,7 @@ input:is(:focus, :active, .ng-dirty) + label::before {
   transition: 0.2s ease-in-out;
 }
 
-input.ng-invalid:not(.ng-untouched) {
+input.ng-invalid:not(.ng-pristine) {
   border-color: #fd6c70;
 }
 

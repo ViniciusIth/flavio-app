@@ -1,18 +1,23 @@
 <form class="login-form" [formGroup]="loginForm">
-  <h1 class="text-tittle">Fazer login</h1>
+  <h1 class="text-tittle">Fazer Login</h1>
 
   <div class="mt-5">
-    <input class="rounded-xl surface" type="email" name="email" id="email" formControlName="email" autocomplete="email"/>
+    <input class="rounded-xl surface" type="email" name="email" id="email" formControlName="email"
+      autocomplete="email" />
     <label class="text-label" for="email" aria-label="Email"></label>
   </div>
 
   <div class="mt-5">
-    <input class="rounded-xl surface" type="password" name="password" id="password" autocomplete="current-password" formControlName="password">
+    <input class="rounded-xl surface" type="password" name="password" id="password" autocomplete="current-password"
+      formControlName="password">
     <label class="text-label" for="password" aria-label="Senha"></label>
   </div>
 
+  <span class="mt-5 p-6 danger rounded-xl" [ngClass]="hasAttempts ? '' : 'hidden'">Não foi possível realizar o login
+    com o e-mail e senha fornecidos. Por favor, verifique os dados e tente novamente.</span>
+
   <div class="mt-5 flex justify-between">
-    <button type="button" class="primary bttn-filled" [disabled]="!loginForm.valid">Login</button>
-    <a class="clickable flex items-center">Esqueci minha senha</a>
+    <button type="button" class="primary bttn-filled" [disabled]="!loginForm.valid" (click)="login()">Login</button>
+    <a class="clickable flex items-center" onclick="alert('ahahahah')">Esqueci minha senha</a>
   </div>
 </form>

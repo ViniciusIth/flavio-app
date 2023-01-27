@@ -1,9 +1,4 @@
-import {
-  trigger,
-  transition,
-  style,
-  animate,
-} from '@angular/animations';
+import { trigger, transition, style, animate } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({

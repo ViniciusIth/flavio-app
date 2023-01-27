@@ -5,14 +5,14 @@
     <ng-container *ngIf="state === 'login'; else registerForm">
       <auth-login @toggleTrigger></auth-login>
       <div class="relative -bottom-10">Não tem uma conta?
-        <a class="clickable primary" (click)="alternateState()">Cadastre-se</a>
+        <a class="clickable primary px-0.5" (click)="alternateState()">Cadastre-se</a>
       </div>
     </ng-container>
 
     <ng-template #registerForm>
       <auth-register @toggleTrigger></auth-register>
       <div class="relative -bottom-10">Já possui uma conta?
-        <a class="clickable primary" (click)="alternateState()">Login</a>
+        <a class="clickable primary px-0.5" (click)="alternateState()">Login</a>
       </div>
     </ng-template>
 
