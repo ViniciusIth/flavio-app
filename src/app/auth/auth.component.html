@@ -10,7 +10,7 @@
     </ng-container>
 
     <ng-template #registerForm>
-      <auth-register @toggleTrigger></auth-register>
+      <auth-register @toggleTrigger (registerEvent)="alternateState()"></auth-register>
       <div class="relative -bottom-10">Já possui uma conta?
         <a class="clickable primary px-0.5" (click)="alternateState()">Login</a>
       </div>
