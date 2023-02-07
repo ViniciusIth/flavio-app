@@ -1,5 +1,11 @@
+import { catchError, of } from 'rxjs';
 import { AuthService } from './../../core/services/auth.service';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Output,
+} from '@angular/core';
 import {
   FormGroup,
   FormControl,
@@ -15,6 +21,11 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RegisterComponent {
+  @Output()
+  registerEvent = new EventEmitter<void>();
+
+  errored: boolean = false;
+
   constructor(private auth: AuthService) {}
 
   registerForm = new FormGroup({
@@ -44,8 +55,16 @@ export class RegisterComponent {
     if (formValues.name && formValues.email && formValues.password) {
       this.auth
         .register(formValues.name, formValues.email, formValues.password)
+        .pipe(
+          catchError((err, caught) => {
+            this.errored = true;
+            console.log(err, caught);
+            return of();
+          })
+        )
         .subscribe((data) => {
-          console.log(data);
+          this.errored = false;
+          this.registerEvent.emit();
         });
     }
   }
