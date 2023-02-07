@@ -24,4 +24,9 @@ export class AuthService {
       password,
     });
   }
+
+  isLoggedIn(): boolean {
+    const access_token = localStorage.getItem('token')
+    return access_token !== null && access_token.length > 0;
+  }
 }
